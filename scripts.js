@@ -120,9 +120,7 @@ function playGame() {
     choiceButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             playerSelection = btn.value;
-            console.log(playerSelection);
             getComputerChoice();
-            console.log(computerSelection);
             playRound(playerSelection, computerSelection);
             userCounter.textContent = playerScore;
             computerCounter.textContent = computerScore;
