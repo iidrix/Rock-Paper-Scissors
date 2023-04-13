@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>RPS Ultimate</h1>
+
+        <div id="result-output">
+            <p id="computer-choice"></p>
+            <p id="output">Start the game by picking your hand!</p>
+        </div>
+
+        <div class="score">
+            <div id="user-score">
+                <p id="user-counter"></p>
+                <p>User score</p>
+            </div>
+            <div id="computer-score">
+                <p id="computer-counter"></p>
+                <p>Computer score</p>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="choice-button" value="Rock">Rock</button>
+            <button id="choice-button" value="Paper">Paper</button>
+            <button id="choice-button" value="Scissors">Scissors</button>
+        </div>
+
+        <hr>
+
+        <button id="reset-game">Reset</button>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

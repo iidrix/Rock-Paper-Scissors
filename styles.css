@@ -1,0 +1,92 @@
+:root {
+    --dark-color: #252525;
+    --dark-grey-color: #181818;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101010;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    color: #7d1abe;
+    margin: 0;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+#result-output {
+    background-color: var(--dark-color);
+    border-radius: 25px;
+    width: 35vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#output, #computer-choice {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.score {
+    display: flex;
+    gap: 32px;
+}
+
+.score p {
+    color: #fff;
+}
+
+#user-score, #computer-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+#buttons {
+    display: flex;
+    gap: 32px;
+}
+
+button {
+    width: 15vw;
+    padding: 20px 0;
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--dark-grey-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+hr {
+    width: 20%;
+}
